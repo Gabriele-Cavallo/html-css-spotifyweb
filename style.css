@@ -351,8 +351,11 @@ footer .time-bar span{
 }
 footer .footer-button{
     padding-bottom: 10px;
-    font-size: 25px;
+    font-size: 18px;
     color: white;
+}
+footer .footer-button .fa-circle-play{
+    font-size: 30px;
 }
 footer .footer-button i:hover{
     transform: scale(1.2);
