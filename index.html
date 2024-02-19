@@ -8,12 +8,70 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- /Google Font -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- /Font Awesome -->
     <title>Spotify Web</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main class="flex">
         <nav class="flex aside-clmn">
+            <button class="btn logo">
+                <img src="./img/logo.svg" alt="Logo Spotify">
+            </button>
+            <!-- Nav Main Section -->
+            <section class="nav-main">
+                <ul>
+                    <li class="border-green flex algn-itms hover-white">
+                        <img src="./img/home.svg" alt="Home">
+                        <span>Home</span>
+                    </li>
+                    <li class="flex algn-itms hover-white">
+                        <img src="./img/search.svg" alt="Search">
+                        <span>Cerca</span>
+                    </li>
+                    <li class="flex algn-itms hover-white">
+                        <img src="./img/libreria.svg" alt="Your library">
+                        <span>La tua libreria</span>
+                    </li>
+                </ul>
+            </section>
+            <!-- /Nav Main Section -->
+
+            <!-- Section Playlist -->
+            <section class="playlist flex aside-clmn grow">
+                <h5>PLAYLIST</h5>
+                <button class="btn flex algn-itms jst-cntr">
+                    <i class="fa-solid fa-plus flex jst-cntr algn-itms"></i>
+                    <span>Crea Playlist</span>
+                </button>
+                <ul>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                </ul>
+            </section>
+            <!-- /Section Playlist -->
+
+            <!-- Download Section -->
+            <section class="download">
+                <button class="btn">
+                    <a  class="flex algn-itms" href="#">
+                        <img src="./img/download.svg" alt="Download">
+                        Installa app
+                    </a>
+                </button>
+                <div class="user flex algn-itms">
+                    <i class="fa-regular fa-user"></i>
+                    <Span> Jhon Doe</Span>
+                </div>
+            </section>
+            <!-- /Download Section -->
 
         </nav>
         <section class="in-evidence">

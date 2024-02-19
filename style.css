@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 /* #endregion ---- Reset ---- */
 
@@ -41,17 +41,29 @@
 
 body{
     color: #7f838b;
+    font-size: small;
 }
 
 /* #endregion ---- Typography ---- */
 
 /* #region ---- General ---- */
 
-.hover-white{
+.hover-white:hover{
     color: white;
 }
 main{
     height: calc(100vh - 55px);
+}
+img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    font-size: 10px;
+    color: #7f838b;
+}
+ul{
+    list-style: none;
 }
 
 /* #endregion ---- General ---- */
@@ -74,12 +86,81 @@ main{
 
 /* #region ---- Nav Main ---- */
 
+.logo{
+    padding: 15px 0;
+    max-width: 80px;
+}
 main nav{
     background-color: black;
     min-width: 140px;
+    padding: 10px 15px 0;
+}
+main nav button{
+    background-color: black;
+}
+.nav-main li img{
+    max-width: 15px;
+    min-height: 15px;
+}
+.nav-main li{
+    padding: 5px 0;
+}
+.nav-main .border-green{
+    border-left: 2px solid #c8e1a6 ;
 }
 
 /* #endregion ---- Nav Main ---- */
+
+/* #region ---- Playlist Section ---- */
+
+.playlist{
+    padding: 8px 0;
+}
+.playlist *{
+    padding: 5px 0;
+}
+.playlist button i{
+    background-color: #a4a4a4;
+    min-height: 25px;
+    min-width: 25px;
+    font-size: 16px;
+}
+.playlist span{
+    color: #7f838b;
+    padding-left: 5px;
+}
+.playlist li{
+    padding: 5px;
+}
+
+/* #endregion ---- Playlist Section ---- */
+
+/* #region ---- Download Section ---- */
+
+.download img{
+    max-width: 10px;
+}
+.download button{
+    width: 100%;
+    border-bottom: 1px solid #7f838b;
+    padding: 6px 0;
+}
+.download a{
+    gap: 5px;
+}
+.user{
+    color: white;
+    gap: 5px;
+    padding: 8px 0;
+}
+.download i{
+    background-color: #7f838b;
+    border-radius: 50%;
+    max-width: 15px;
+    max-height: 15px;
+}
+
+/* #endregion ---- Download Section ---- */
 
 /* #region ---- In evidence section ---- */
 
