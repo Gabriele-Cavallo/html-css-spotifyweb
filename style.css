@@ -196,7 +196,11 @@ main .hidden ul{
 
 .playlist{
     padding: 8px 0;
+    overflow-y: hidden;
+}
+.playlist ul{
     overflow-y: auto;
+    height: calc(100% - 60px);
 }
 .playlist *{
     padding: 5px 0;
@@ -413,12 +417,27 @@ footer .songs-menu{
 
 /* #region ---- Footer Media Query ---- */
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 1100px){
     footer .bar{
-        min-width: 125px;
+        min-width: 250px;
     }
     footer .bar .grey-bar{
-        min-width: 35px;
+        min-width: 50px;
+    }
+    .audio .volume-bar{
+        min-width: 120px;
+    }
+    .audio .grey-volume{
+        min-width: 25px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    footer .bar{
+        min-width: 145px;
+    }
+    footer .bar .grey-bar{
+        min-width: 30px;
     }
     .audio .volume-bar{
         min-width: 105px;
@@ -438,6 +457,29 @@ footer .songs-menu{
     .footer-menu .playing img{
         max-width: 40px;
         max-height: 40px;
+    }
+    footer .time-bar .bar i,
+    footer .audio .volume-bar i{
+        font-size: 12px;
+    }
+
+}
+@media screen and (max-width: 600px){
+    footer .bar{
+        min-width: 130px;
+    }
+    footer .bar .grey-bar{
+        min-width: 25px;
+    }
+    .audio .volume-bar{
+        min-width: 85px;
+    }
+    .audio .grey-volume{
+        min-width: 20px;
+    }
+    footer .footer-menu .playing small{
+        width: 50%;
+        display: inline-block;
     }
 }
 
