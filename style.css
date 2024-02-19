@@ -322,6 +322,15 @@ main .in-evidence{
     }
     
 }
+@media screen and (max-width: 700px){
+    .in-evidence ul{
+        flex-wrap: wrap;
+    }
+    .card-6{
+        width: 50%;
+    }
+    
+}
 @media screen and (max-width: 600px){
   .upgrade{
     width: calc(100% - 50px);
@@ -352,14 +361,14 @@ footer .playing img{
     min-width: 430px;
     border-radius: 10px;
 }
-.grey-bar, .gray-volume{
+.grey-bar, .grey-volume{
     background-color: #c1c1c1;
     height: 5px;
     min-width: 85px;
     border-radius: 10px;
 }
 .hover-bar:hover,
-.audio .gray-volume:hover{
+.audio .grey-volume:hover{
     background-color: lightgreen;
 }
 footer .time-bar .bar i,
@@ -368,7 +377,7 @@ footer .audio .volume-bar i{
     display: none;
 }
 footer .time-bar .bar .hover-bar:hover + i,
-footer .audio .volume-bar .gray-volume:hover + i{
+footer .audio .volume-bar .grey-volume:hover + i{
     display: block;
 }
 footer .time-bar span{
@@ -389,7 +398,7 @@ footer .footer-button i:hover{
 .audio .volume-bar{
     min-width: 120px;
 }
-.audio .gray-volume{
+.audio .grey-volume{
     min-width: 25px;
 }
 footer .footer-menu{
@@ -401,6 +410,38 @@ footer .songs-menu{
     left: 50%;
     transform: translate(-50% , -50%);
 }
+
+/* #region ---- Footer Media Query ---- */
+
+@media screen and (max-width: 700px){
+    footer .bar{
+        min-width: 125px;
+    }
+    footer .bar .grey-bar{
+        min-width: 35px;
+    }
+    .audio .volume-bar{
+        min-width: 105px;
+    }
+    .audio .grey-volume{
+        min-width: 20px;
+    }
+    #footer-block{
+        display: block;
+    }
+    .songs-menu .time-bar span{
+        font-size: 10px;
+    }
+    .songs-menu .footer-button{
+        gap: 25px;
+    }
+    .footer-menu .playing img{
+        max-width: 40px;
+        max-height: 40px;
+    }
+}
+
+/* #endregion ---- Footer Media Query ---- */
 
 /* #endregion ---- Footer section ---- */
 
