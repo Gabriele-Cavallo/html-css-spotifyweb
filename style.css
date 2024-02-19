@@ -1,0 +1,71 @@
+/* #region ---- Reset ---- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* #endregion ---- Reset ---- */
+
+/* #region ---- Flex-rules ---- */
+
+.flex{
+    display: flex;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.jst-btwn{
+    justify-content: space-between;
+}
+
+.jst-cntr{
+    justify-content: center;
+}
+.algn-itms{
+    align-items: center;
+}
+.aside-clmn{
+    flex-direction: column;
+}
+.grow{
+    flex-grow: 1;
+}
+
+/* #endregion ---- Flex-rules ---- */
+
+/* #region ---- Typography ---- */
+
+body{
+    color: #7f838b;
+}
+
+/* #endregion ---- Typography ---- */
+
+/* #region ---- General ---- */
+
+.hover-white{
+    color: white;
+}
+
+/* #endregion ---- General ---- */
+
+/* #region ---- Buttons ---- */
+
+.btn{
+    color: white;
+    border: transparent;
+    background: none;
+    cursor: pointer;
+}
+.round-btn{
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 10px 25px;
+}
+
+/* #endregion ---- Buttons ---- */
+
+
