@@ -16,6 +16,8 @@
 .row{
     display: flex;
     flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
 }
 
 .jst-btwn{
@@ -43,8 +45,17 @@ body{
     color: #7f838b;
     font-size: small;
 }
+h2 , h4{
+    color: white;
+}
+h4{
+    padding: 5px 0;
+}
 h5{
     color: white;
+}
+.txt-cntr{
+    text-align: center;
 }
 
 /* #endregion ---- Typography ---- */
@@ -67,6 +78,19 @@ a{
 }
 ul{
     list-style: none;
+}
+.gap-10{
+    gap: 10px;
+}
+.gap-20{
+    gap: 20px;
+}
+.container{
+    padding: 40px 35px 0 25px ;
+}
+.card-6{
+    width: calc(100% / 6);
+    padding: 10px ;
 }
 
 
@@ -109,8 +133,14 @@ main nav button{
 .nav-main li{
     padding: 5px 0;
 }
-.nav-main .border-green{
+.border-green{
+    border: 2px solid #c8e1a6 ;
+}
+.border-green-left{
     border-left: 2px solid #c8e1a6 ;
+}
+.border-green-bot{
+    border-bottom: 2px solid #c8e1a6 ;
 }
 .nav-main .hidden img{
     min-width: 25px;
@@ -230,6 +260,34 @@ main .in-evidence{
     position: fixed;
     width: calc(100% - 140px);
     z-index: 10;
+}
+.in-evidence ul{
+    padding-top: 100px;
+}
+.in-evidence .border-green{
+    border-bottom: 1px;
+}
+.in-evidence .container .row{
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+.play-hover{
+    position: relative;
+}
+.play-hover i{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    font-size: 80px;
+    color: white;
+    display: none;
+}
+.card-6 .play-hover:hover i{
+    display: block;
+}
+.card-6 .play-hover:hover img{
+    opacity: 0.7;
 }
 
 /* #region ---- In evidence-Media Query ---- */
