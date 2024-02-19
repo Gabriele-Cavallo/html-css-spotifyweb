@@ -43,6 +43,9 @@ body{
     color: #7f838b;
     font-size: small;
 }
+h5{
+    color: white;
+}
 
 /* #endregion ---- Typography ---- */
 
@@ -124,6 +127,7 @@ main nav button{
     min-height: 25px;
     min-width: 25px;
     font-size: 16px;
+    color: black;
 }
 .playlist span{
     color: #7f838b;
