@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 1px solid red;
 }
 /* #endregion ---- Reset ---- */
 
@@ -49,6 +50,9 @@ body{
 .hover-white{
     color: white;
 }
+main{
+    height: calc(100vh - 55px);
+}
 
 /* #endregion ---- General ---- */
 
@@ -67,5 +71,34 @@ body{
 }
 
 /* #endregion ---- Buttons ---- */
+
+/* #region ---- Nav Main ---- */
+
+main nav{
+    background-color: black;
+    min-width: 140px;
+}
+
+/* #endregion ---- Nav Main ---- */
+
+/* #region ---- In evidence section ---- */
+
+main .in-evidence{
+    background-color: #23272f;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+}
+
+/* #endregion ---- In evidence section ---- */
+
+/* #region ---- Footer section ---- */
+
+footer{
+    background-color: #313131;
+    min-height: 55px;
+}
+
+/* #endregion ---- Footer section ---- */
 
 
