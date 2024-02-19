@@ -45,7 +45,7 @@ body{
     color: #7f838b;
     font-size: small;
 }
-h2 , h3{
+h2 , h3 , h4{
     color: white;
 }
 h3{
@@ -126,7 +126,7 @@ p{
 }
 main nav{
     background-color: black;
-    min-width: 140px;
+    min-width: 230px;
     padding: 10px 15px 0;
 }
 main nav button{
@@ -264,7 +264,7 @@ main .in-evidence{
     padding: 20px 20px 30px 0;
     text-align: end;
     position: fixed;
-    width: calc(100% - 140px);
+    width: calc(100% - 230px);
     z-index: 10;
 }
 .in-evidence ul{
@@ -311,7 +311,47 @@ main .in-evidence{
 
 footer{
     background-color: #313131;
-    min-height: 55px;
+    min-height: 90px;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+footer .playing img{
+    max-width: 45px;
+    max-height: 45px;
+}
+.bar{
+    background-color: #5a5a5a;
+    height: 5px;
+    min-width: 430px;
+    border-radius: 10px;
+}
+.grey-bar{
+    background-color: #c1c1c1;
+    height: 5px;
+    min-width: 85px;
+    border-radius: 10px;
+}
+.hover-bar:hover{
+    background-color: lightgreen;
+}
+footer .time-bar .bar i{
+    color: white;
+    display: none;
+}
+footer .time-bar .bar .hover-bar:hover + i{
+    display: block;
+}
+footer .time-bar span{
+    color: white;
+    font-weight: 700;
+}
+footer .footer-button{
+    padding-bottom: 20px;
+    font-size: 20px;
+    color: white;
+}
+footer .footer-button i:hover{
+    transform: scale(1.2);
 }
 
 /* #endregion ---- Footer section ---- */
