@@ -230,6 +230,7 @@
     </main>
     <footer>
         <div class="footer-menu flex jst-btwn algn-itms">
+            <!-- Now Playing -->
             <div class="playing flex algn-itms gap-20">
                 <div class="flex gap-10 algn-itms">
                     <img src="./img/sinister.jpeg" alt="Sinister">
@@ -239,10 +240,13 @@
                     </div>
                 </div>
                 <div class="gap-10 flex algn-itms">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-folder"></i>
+                    <i class="fa-regular fa-heart hover-white"></i>
+                    <i class="fa-regular fa-folder hover-white"></i>
                 </div>
             </div>
+            <!-- /Now Playing -->
+
+            <!-- Songs menu -->
             <div class="songs-menu">
                 <div class="footer-button flex gap-20 jst-cntr">
                     <i class="fa-solid fa-shuffle"></i>
@@ -260,9 +264,19 @@
                     <span>4:35</span>
                 </div>
             </div>  
-            <div class="audio flex algn-itms">
+            <!-- /Songs menu -->
 
+            <!-- Audio volume -->
+            <div class="audio flex algn-itms gap-10">
+                <i class="fa-solid fa-bars hover-white"></i>
+                <i class="fa-solid fa-desktop hover-white"></i>
+                <i class="fa-solid fa-volume-high hover-white"></i>
+                <div class="volume-bar flex algn-itms">
+                    <div class="gray-volume"></div>
+                    <i class="fa-solid fa-circle"></i>
+                </div>
             </div>
+            <!-- /Audio volume -->
         </div>
         
     </footer>

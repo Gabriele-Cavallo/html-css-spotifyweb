@@ -314,31 +314,35 @@ footer{
     min-height: 90px;
     padding-top: 20px;
     padding-left: 10px;
+    padding-right: 10px;
 }
 footer .playing img{
     max-width: 45px;
     max-height: 45px;
 }
-.bar{
+.bar , .volume-bar{
     background-color: #5a5a5a;
     height: 5px;
     min-width: 430px;
     border-radius: 10px;
 }
-.grey-bar{
+.grey-bar, .gray-volume{
     background-color: #c1c1c1;
     height: 5px;
     min-width: 85px;
     border-radius: 10px;
 }
-.hover-bar:hover{
+.hover-bar:hover,
+.audio .gray-volume:hover{
     background-color: lightgreen;
 }
-footer .time-bar .bar i{
+footer .time-bar .bar i,
+footer .audio .volume-bar i{
     color: white;
     display: none;
 }
-footer .time-bar .bar .hover-bar:hover + i{
+footer .time-bar .bar .hover-bar:hover + i,
+footer .audio .volume-bar .gray-volume:hover + i{
     display: block;
 }
 footer .time-bar span{
@@ -346,12 +350,27 @@ footer .time-bar span{
     font-weight: 700;
 }
 footer .footer-button{
-    padding-bottom: 20px;
-    font-size: 20px;
+    padding-bottom: 10px;
+    font-size: 25px;
     color: white;
 }
 footer .footer-button i:hover{
     transform: scale(1.2);
+}
+.audio .volume-bar{
+    min-width: 120px;
+}
+.audio .gray-volume{
+    min-width: 25px;
+}
+footer .footer-menu{
+    position: relative;
+}
+footer .songs-menu{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
 }
 
 /* #endregion ---- Footer section ---- */
