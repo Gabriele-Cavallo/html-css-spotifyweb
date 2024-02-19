@@ -146,20 +146,39 @@ main nav button{
     background-color: black;
 }
 .nav-main li img{
-    max-width: 15px;
-    min-height: 15px;
+    max-width: 20px;
+    min-height: 20px;
 }
 .nav-main li{
-    padding: 5px 0;
+    padding: 10px 0;
 }
 .border-green{
-    border: 2px solid #c8e1a6 ;
+    border: 2px solid #adff2f ;
 }
 .border-green-left{
-    border-left: 2px solid #c8e1a6 ;
+    margin-left: -5px;
+    position: relative;
+}
+.border-green-left::before{
+    content: '';
+    position: absolute;
+    border-left: 2px solid #ADFF2F;
+    left: -10px;
+    bottom: 50%;
+    transform: translate(0 , 50%);
+    height: 50%;
 }
 .border-green-bot{
-    border-bottom: 2px solid #c8e1a6 ;
+    position: relative;
+}
+.border-green-bot::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    transform: translate(-50% , -50%);
+    width: 50%;
+    border-bottom: 2px solid #adff2f ;
 }
 .nav-main .hidden img{
     min-width: 25px;
@@ -201,6 +220,7 @@ main .hidden ul{
 .playlist ul{
     overflow-y: auto;
     height: calc(100% - 60px);
+    padding-top: 10px;
 }
 .playlist *{
     padding: 5px 0;
@@ -218,7 +238,7 @@ main .hidden ul{
     font-weight: 700;
 }
 .playlist li{
-    padding: 5px 0;
+    padding-bottom: 15px;
 }
 
 /* #endregion ---- Playlist Section ---- */
@@ -373,7 +393,7 @@ footer .playing img{
 }
 .hover-bar:hover,
 .audio .grey-volume:hover{
-    background-color: lightgreen;
+    background-color: #adff2f;
 }
 footer .time-bar .bar i,
 footer .audio .volume-bar i{
