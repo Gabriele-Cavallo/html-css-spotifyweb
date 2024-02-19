@@ -69,6 +69,7 @@ ul{
     list-style: none;
 }
 
+
 /* #endregion ---- General ---- */
 
 /* #region ---- Buttons ---- */
@@ -186,4 +187,23 @@ footer{
 
 /* #endregion ---- Footer section ---- */
 
+/* #region ---- General Media Query ---- */
 
+@media screen and (max-width: 600px){
+    .hide{
+        display: block;
+    }
+    .reveal{
+        display: none;
+    }
+}
+@media screen and (min-width:601px){
+    .hide{
+        display: none;
+    }
+    .reveal{
+        display: block;
+    }
+}
+
+/* #endregion ---- General Media Query ---- */
