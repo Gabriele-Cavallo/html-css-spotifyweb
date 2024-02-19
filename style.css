@@ -112,6 +112,34 @@ main nav button{
 .nav-main .border-green{
     border-left: 2px solid #c8e1a6 ;
 }
+.nav-main .hidden img{
+    min-width: 25px;
+    min-height: 25px;
+}
+main .hidden li{
+    padding: 2px 0;
+}
+main .hidden ul{
+    margin-top: 10px;
+}
+
+/* #region ---- Nav Main-Media Query ---- */
+
+@media screen and (max-width: 600px){
+    .nav-main{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+    main .aside-clmn{
+        align-items: center;
+    }
+    main nav #small-logo{
+        min-width: 30px;
+        min-height: 30px;
+    }
+}
+/* #endregion ---- Nav Main-Media Query ---- */
 
 /* #endregion ---- Nav Main ---- */
 
@@ -158,12 +186,31 @@ main nav button{
     gap: 5px;
     padding: 8px 0;
 }
+.user i{
+    overflow: hidden;
+}
 .download i{
     background-color: #7f838b;
     border-radius: 50%;
     max-width: 15px;
     max-height: 15px;
 }
+/* #region ---- Download-Media Query ---- */
+
+@media screen and (max-width: 600px){
+    .download .hidden i{
+        color: white;
+        overflow: hidden;
+    }
+    .download .hidden *{
+        margin: 5px 0;
+    }
+    .download .hidden{
+        text-align: center;
+    }
+}
+
+/* #endregion ---- Download-Media Query ---- */
 
 /* #endregion ---- Download Section ---- */
 
@@ -190,15 +237,18 @@ footer{
 /* #region ---- General Media Query ---- */
 
 @media screen and (max-width: 600px){
-    .hide{
+    .hidden{
         display: block;
     }
     .reveal{
         display: none;
     }
+    main nav{
+        min-width: 50px;
+    }
 }
 @media screen and (min-width:601px){
-    .hide{
+    .hidden{
         display: none;
     }
     .reveal{

@@ -20,22 +20,46 @@
             <button class="btn logo reveal">
                 <img src="./img/logo.svg" alt="Logo Spotify">
             </button>
+            <a id="small-logo" href="#">
+                <img class="hidden" src="./img/logo-small.svg" alt="Logo">
+            </a>
             <!-- Nav Main Section -->
-            <section class="nav-main reveal">
-                <ul>
-                    <li class="border-green flex algn-itms hover-white">
-                        <img src="./img/home.svg" alt="Home">
-                        <span>Home</span>
-                    </li>
-                    <li class="flex algn-itms hover-white">
-                        <img src="./img/search.svg" alt="Search">
-                        <span>Cerca</span>
-                    </li>
-                    <li class="flex algn-itms hover-white">
-                        <img src="./img/libreria.svg" alt="Your library">
-                        <span>La tua libreria</span>
-                    </li>
-                </ul>
+            <section class="nav-main">
+                <section class="reveal">
+                    <ul>
+                        <li class="border-green flex algn-itms hover-white">
+                            <img src="./img/home.svg" alt="Home">
+                            <span>Home</span>
+                        </li>
+                        <li class="flex algn-itms hover-white">
+                            <img src="./img/search.svg" alt="Search">
+                            <span>Cerca</span>
+                        </li>
+                        <li class="flex algn-itms hover-white">
+                            <img src="./img/libreria.svg" alt="Your library">
+                            <span>La tua libreria</span>
+                        </li>
+                    </ul>
+                </section>
+                <section class="hidden">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="./img/home.svg" alt="Home">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/search.svg" alt="Search">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/libreria.svg" alt="Library">
+                            </a>
+                        </li>
+                    </ul>
+                </section>
             </section>
             <!-- /Nav Main Section -->
 
@@ -59,17 +83,23 @@
             <!-- /Section Playlist -->
 
             <!-- Download Section -->
-            <section class="reveal download">
-                <button class="btn">
-                    <a  class="hover-white flex algn-itms" href="#">
-                        <img src="./img/download.svg" alt="Download">
-                        Installa app
-                    </a>
-                </button>
-                <div class="user flex algn-itms">
+            <section class="download">
+                <section class="reveal">
+                    <button class="btn">
+                        <a  class="hover-white flex algn-itms" href="#">
+                            <img src="./img/download.svg" alt="Download">
+                            Installa app
+                        </a>
+                    </button>
+                    <div class="user flex algn-itms">
+                        <i class="fa-regular fa-user"></i>
+                        <Span> Jhon Doe</Span>
+                    </div>
+                </section>
+                <section class="hidden">
+                    <img src="./img/download.svg" alt="Download">
                     <i class="fa-regular fa-user"></i>
-                    <Span> Jhon Doe</Span>
-                </div>
+                </section>
             </section>
             <!-- /Download Section -->
 
