@@ -54,6 +54,7 @@ h3{
 }
 h5{
     color: white;
+    font-size: 16px;
 }
 .txt-cntr{
     text-align: center;
@@ -105,9 +106,10 @@ p{
 .hidden{
     display: none;
 }
-.visible{
-    display: block;
+i , li , .hover-white , .card-6{
+    cursor: pointer;
 }
+
 
 
 /* #endregion ---- General ---- */
@@ -135,7 +137,7 @@ main .aside-clmn{
 }
 .logo{
     padding: 15px 0;
-    max-width: 80px;
+    max-width: 130px;
 }
 main nav{
     background-color: black;
@@ -148,6 +150,10 @@ main nav button{
 .nav-main li img{
     max-width: 20px;
     min-height: 20px;
+    filter: opacity(0.75);
+}
+li:hover img{
+    filter: opacity(1)
 }
 .nav-main li{
     padding: 10px 0;
@@ -166,7 +172,7 @@ main nav button{
     left: -10px;
     bottom: 50%;
     transform: translate(0 , 50%);
-    height: 50%;
+    height: 60%;
 }
 .border-green-bot{
     position: relative;
@@ -234,11 +240,18 @@ main .hidden ul{
 }
 .playlist span{
     color: #7f838b;
-    padding-left: 5px;
+    padding-left: 10px;
     font-weight: 700;
+    font-size: 16px;
 }
 .playlist li{
     padding-bottom: 15px;
+}
+.playlist button:hover div > i{
+    background-color: white;
+}
+.playlist button:hover div > span{
+    color: white;
 }
 
 /* #endregion ---- Playlist Section ---- */
@@ -247,6 +260,10 @@ main .hidden ul{
 
 .download img{
     max-width: 10px;
+    filter: opacity(0.75);
+}
+.download .btn:hover img{
+    filter: opacity(1);
 }
 .download button{
     width: 100%;
@@ -374,6 +391,9 @@ footer{
     width: 100%;
     bottom: 0;
     z-index: 99;
+}
+footer .footer-menu .playing small:hover{
+    text-decoration: underline;
 }
 footer .playing img{
     max-width: 45px;
