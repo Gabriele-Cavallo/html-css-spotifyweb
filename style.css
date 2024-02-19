@@ -45,10 +45,10 @@ body{
     color: #7f838b;
     font-size: small;
 }
-h2 , h4{
+h2 , h3{
     color: white;
 }
-h4{
+h3{
     padding: 5px 0;
 }
 h5{
@@ -91,6 +91,9 @@ ul{
 .card-6{
     width: calc(100% / 6);
     padding: 10px ;
+}
+p{
+    padding-top: 7px;
 }
 
 
