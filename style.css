@@ -75,7 +75,7 @@ img{
 }
 a{
     text-decoration: none;
-    font-size: 10px;
+    /* font-size: 10px; */
     color: #7f838b;
 }
 ul{
@@ -143,6 +143,9 @@ main nav{
     background-color: black;
     min-width: 230px;
     padding: 10px 15px 0;
+}
+#home{
+    color: white;
 }
 main nav button{
     background-color: black;
@@ -259,7 +262,7 @@ main .hidden ul{
 /* #region ---- Download Section ---- */
 
 .download img{
-    max-width: 10px;
+    max-width: 15px;
     filter: opacity(0.75);
 }
 .download .btn:hover img{
@@ -271,22 +274,34 @@ main .hidden ul{
     padding: 6px 0;
 }
 .download a{
-    gap: 5px;
+    gap: 10px;
     font-weight: 700;
+    font-size: 12px;
+}
+.user a{
+    color: white;
+    font-size: 15px;
 }
 .user{
-    color: white;
-    gap: 5px;
     padding: 8px 0;
 }
-.user i{
-    overflow: hidden;
-}
-.download i{
+.download a i{
     background-color: #7f838b;
     border-radius: 50%;
-    max-width: 15px;
-    max-height: 15px;
+    min-width:  25px;
+    min-height: 25px;
+    font-size: 25px;
+    overflow: hidden;
+    text-align: center;
+}
+.download .hidden img{
+    min-height: 15px;
+    min-width: 15px;
+}
+.download .hidden i{
+    min-height: 25px;
+    min-width: 25px; 
+    font-size: 25px;
 }
 /* #region ---- Download-Media Query ---- */
 
