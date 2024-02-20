@@ -250,10 +250,10 @@ main .hidden ul{
 .playlist li{
     padding-bottom: 15px;
 }
-.playlist button:hover div > i{
+.playlist button:hover a > i{
     background-color: white;
 }
-.playlist button:hover div > span{
+.playlist button:hover a > span{
     color: white;
 }
 
