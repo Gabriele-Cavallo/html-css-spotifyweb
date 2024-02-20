@@ -448,6 +448,7 @@ footer .audio .volume-bar .grey-volume:hover + i,
 footer .time-bar span{
     color: white;
     font-weight: 700;
+    font-size: 10px;
 }
 footer .footer-button{
     padding-bottom: 10px;
@@ -499,9 +500,6 @@ footer .songs-menu{
     }
     #footer-block{
         display: block;
-    }
-    .songs-menu .time-bar span{
-        font-size: 10px;
     }
     .songs-menu .footer-button{
         gap: 25px;
