@@ -404,6 +404,7 @@ footer .playing img{
     height: 5px;
     min-width: 430px;
     border-radius: 10px;
+    cursor: pointer;
 }
 .grey-bar, .grey-volume{
     background-color: #c1c1c1;
@@ -412,7 +413,9 @@ footer .playing img{
     border-radius: 10px;
 }
 .hover-bar:hover,
-.audio .grey-volume:hover{
+.audio .grey-volume:hover,
+.bar:hover .hover-bar,
+.volume-bar:hover .grey-volume{
     background-color: #adff2f;
 }
 footer .time-bar .bar i,
@@ -421,7 +424,9 @@ footer .audio .volume-bar i{
     display: none;
 }
 footer .time-bar .bar .hover-bar:hover + i,
-footer .audio .volume-bar .grey-volume:hover + i{
+footer .audio .volume-bar .grey-volume:hover + i,
+.bar:hover .hover-bar + i,
+.volume-bar:hover .grey-volume + i{
     display: block;
 }
 footer .time-bar span{
