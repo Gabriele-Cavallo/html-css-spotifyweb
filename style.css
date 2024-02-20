@@ -416,9 +416,11 @@ footer .playing img{
 .bar , .volume-bar{
     background-color: #5a5a5a;
     height: 5px;
-    min-width: 430px;
     border-radius: 10px;
     cursor: pointer;
+}
+.bar{
+    width: 25vw;
 }
 .grey-bar, .grey-volume{
     background-color: #c1c1c1;
@@ -477,12 +479,6 @@ footer .songs-menu{
 /* #region ---- Footer Media Query ---- */
 
 @media screen and (max-width: 1100px){
-    footer .bar{
-        min-width: 250px;
-    }
-    footer .bar .grey-bar{
-        min-width: 50px;
-    }
     .audio .volume-bar{
         min-width: 120px;
     }
@@ -492,9 +488,6 @@ footer .songs-menu{
 }
 
 @media screen and (max-width: 700px){
-    footer .bar{
-        min-width: 145px;
-    }
     footer .bar .grey-bar{
         min-width: 30px;
     }
@@ -524,9 +517,6 @@ footer .songs-menu{
 
 }
 @media screen and (max-width: 600px){
-    footer .bar{
-        min-width: 130px;
-    }
     footer .bar .grey-bar{
         min-width: 25px;
     }
@@ -539,6 +529,10 @@ footer .songs-menu{
     footer .footer-menu .playing small{
         width: 50%;
         display: inline-block;
+    }
+    #footer-block{
+        position: relative;
+        left: -20px;
     }
 }
 
