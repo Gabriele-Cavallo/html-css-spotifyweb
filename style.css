@@ -175,7 +175,7 @@ li:hover img{
     left: -10px;
     bottom: 50%;
     transform: translate(0 , 50%);
-    height: 60%;
+    height: 100%;
 }
 .border-green-bot{
     position: relative;
