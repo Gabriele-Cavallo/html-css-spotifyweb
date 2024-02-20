@@ -296,6 +296,7 @@ main .hidden ul{
 .download .hidden img{
     min-height: 15px;
     min-width: 15px;
+    margin-left: -1px;
 }
 .download .hidden i{
     min-height: 25px;
