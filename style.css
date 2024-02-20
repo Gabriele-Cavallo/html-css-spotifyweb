@@ -338,6 +338,9 @@ main .in-evidence{
     max-height: 90px;
     z-index: 10;
 }
+.upgrade a{
+    color: white;
+}
 .in-evidence ul{
     padding-top: 110px;
 }
