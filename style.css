@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid red; */
 }
 /* #endregion ---- Reset ---- */
 
@@ -227,7 +226,7 @@ main .hidden ul{
 }
 .playlist ul{
     overflow-y: auto;
-    height: calc(100% - 60px);
+    height: calc(100% - 71px);
     padding-top: 10px;
 }
 .playlist *{
