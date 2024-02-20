@@ -106,7 +106,7 @@ p{
 .hidden{
     display: none;
 }
-i , li , .hover-white , .card-6{
+i , li , .hover-white , .play-hover{
     cursor: pointer;
 }
 
@@ -311,7 +311,6 @@ main .hidden ul{
 
 main .in-evidence{
     background-color: #23272f;
-    height: 100%;
     width: 100%;
     overflow-y: auto;
 }
