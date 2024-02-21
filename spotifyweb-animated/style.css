@@ -1,0 +1,579 @@
+/* #region ---- Reset ---- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* #endregion ---- Reset ---- */
+
+/* #region ---- Flex-rules ---- */
+
+.flex{
+    display: flex;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.jst-btwn{
+    justify-content: space-between;
+}
+
+.jst-cntr{
+    justify-content: center;
+}
+.algn-itms{
+    align-items: center;
+}
+.aside-clmn{
+    flex-direction: column;
+}
+.grow{
+    flex-grow: 1;
+}
+
+/* #endregion ---- Flex-rules ---- */
+
+/* #region ---- Typography ---- */
+
+body{
+    color: #7f838b;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+h2 , h3 , h4{
+    color: white;
+}
+h3{
+    padding: 5px 0;
+}
+h5{
+    color: white;
+    font-size: 16px;
+}
+.txt-cntr{
+    text-align: center;
+}
+
+/* #endregion ---- Typography ---- */
+
+/* #region ---- General ---- */
+
+.hover-white:hover{
+    color: white;
+}
+main{
+    height: calc(100vh - 90px);
+}
+img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: #7f838b;
+}
+ul{
+    list-style: none;
+}
+.gap-10{
+    gap: 10px;
+}
+.gap-20{
+    gap: 20px;
+}
+.container{
+    padding: 40px 35px 0 25px ;
+}
+.card-6{
+    width: calc(100% / 6);
+    padding: 10px ;
+}
+.card-6-rounded{
+    border-radius: 50%;
+}
+p{
+    padding-top: 7px;
+}
+.visible{
+    display: block;
+}
+.hidden{
+    display: none;
+}
+i , li , .hover-white , .play-hover{
+    cursor: pointer;
+}
+
+
+
+/* #endregion ---- General ---- */
+
+/* #region ---- Buttons ---- */
+
+.btn{
+    color: white;
+    border: transparent;
+    background: none;
+    cursor: pointer;
+}
+.round-btn{
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 10px 25px;
+}
+
+/* #endregion ---- Buttons ---- */
+
+/* #region ---- Nav Main ---- */
+
+main .aside-clmn{
+    overflow-y: hidden;
+}
+.logo{
+    padding: 15px 0;
+    max-width: 130px;
+}
+main nav{
+    background-color: black;
+    min-width: 230px;
+    padding: 10px 15px 0;
+}
+#home{
+    color: white;
+}
+main nav button{
+    background-color: black;
+}
+.nav-main li img{
+    max-width: 20px;
+    min-height: 20px;
+    filter: opacity(0.75);
+}
+li:hover img{
+    filter: opacity(1)
+}
+.nav-main li{
+    padding: 10px 0;
+}
+.border-green{
+    border: 2px solid #adff2f ;
+}
+.border-green-left{
+    margin-left: -5px;
+    position: relative;
+}
+.border-green-left::before{
+    content: '';
+    position: absolute;
+    border-left: 2px solid #ADFF2F;
+    left: -10px;
+    bottom: 50%;
+    transform: translate(0 , 50%);
+    height: 100%;
+}
+.border-green-bot{
+    position: relative;
+}
+.border-green-bot::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    transform: translate(-50% , -50%);
+    width: 50%;
+    border-bottom: 2px solid #adff2f ;
+}
+.nav-main .hidden img{
+    min-width: 25px;
+    min-height: 25px;
+}
+main .hidden li{
+    padding: 2px 0;
+}
+main .hidden ul{
+    margin-top: 10px;
+}
+
+/* #region ---- Nav Main-Media Query ---- */
+
+@media screen and (max-width: 600px){
+    .nav-main{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+    main .aside-clmn{
+        align-items: center;
+    }
+    main nav #small-logo{
+        min-width: 30px;
+        min-height: 30px;
+    }
+}
+/* #endregion ---- Nav Main-Media Query ---- */
+
+/* #endregion ---- Nav Main ---- */
+
+/* #region ---- Playlist Section ---- */
+
+.playlist{
+    padding: 8px 0;
+    overflow-y: hidden;
+}
+.playlist button{
+    margin-bottom: 10px;
+}
+.playlist ul{
+    overflow-y: auto;
+    height: calc(100% - 80px);
+}
+.playlist h5, .playlist button{
+    padding: 5px 0;
+}
+.playlist button i{
+    background-color: #a4a4a4;
+    min-height: 25px;
+    min-width: 25px;
+    font-size: 16px;
+    color: black;
+}
+.playlist span{
+    color: #7f838b;
+    padding-left: 10px;
+    font-weight: 700;
+    font-size: 16px;
+}
+.playlist li{
+    padding-bottom: 15px;
+}
+.playlist button:hover a > i{
+    background-color: white;
+}
+.playlist button:hover a > span{
+    color: white;
+}
+
+/* #endregion ---- Playlist Section ---- */
+
+/* #region ---- Download Section ---- */
+
+.download img{
+    max-width: 15px;
+    filter: opacity(0.75);
+}
+.download .btn:hover img{
+    filter: opacity(1);
+}
+.download button{
+    width: 100%;
+    border-bottom: 1px solid #7f838b;
+    padding: 6px 0;
+}
+.download a{
+    gap: 10px;
+    font-weight: 700;
+    font-size: 12px;
+}
+.user a{
+    color: white;
+    font-size: 15px;
+}
+.user{
+    padding: 8px 0;
+}
+.download .profile-img{
+    background-color: #7f838b;
+    border-radius: 50%;
+    min-width:  25px;
+    min-height: 25px;
+    overflow: hidden;
+    text-align: center;
+}
+.download .hidden img{
+    min-height: 15px;
+    min-width: 15px;
+    margin-left: -1px;
+}
+.download .hidden .profile-img{
+    min-height: 25px;
+    min-width: 25px; 
+}
+/* #region ---- Download-Media Query ---- */
+
+@media screen and (max-width: 600px){
+    .download .hidden i{
+        color: white;
+        overflow: hidden;
+    }
+    .download .hidden *{
+        margin: 5px 0;
+    }
+    .download .hidden{
+        text-align: center;
+    }
+}
+
+/* #endregion ---- Download-Media Query ---- */
+
+/* #endregion ---- Download Section ---- */
+
+/* #region ---- In evidence section ---- */
+
+main .in-evidence{
+    background-color: #23272f;
+    width: 100%;
+    overflow-y: auto;
+}
+.upgrade{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px 20px 30px 0;
+    text-align: end;
+    position: fixed;
+    width: calc(100% - 230px);
+    max-height: 90px;
+    z-index: 10;
+}
+.upgrade a{
+    color: white;
+}
+.in-evidence ul{
+    padding-top: 110px;
+    flex-wrap: wrap;
+}
+.in-evidence .border-green{
+    border-bottom: 1px;
+}
+.in-evidence .container .row{
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+.anchor{
+    position: relative;
+}
+.anchor img{
+    display: block;
+}
+.play-hover{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 70px;
+    color: white;
+    display: none;
+}
+.card-6-rounded ~ .play-hover{
+    border-radius: 50%;
+}
+.play-hover i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.card-6:hover .play-hover{
+    display: block;
+}
+.in-evidence button:hover{
+    transform: scale(1.2);
+}
+/* #region ---- In evidence-Media Query ---- */
+
+@media screen and (max-width: 1100px){
+    .card-6{
+        width: 25%;
+    }
+    .play-hover{
+        font-size: 50px;
+    }
+    
+}
+@media screen and (max-width: 700px){
+    .card-6{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 600px){
+    .upgrade{
+        width: calc(100% - 50px);
+    }
+    .in-evidence button:hover{
+        transform: scale(1.1);
+    }
+}
+/* #endregion ---- In Evidence-Media Query ---- */
+
+/* #endregion ---- In evidence section ---- */
+
+/* #region ---- Footer section ---- */
+
+footer{
+    background-color: #313131;
+    min-height: 90px;
+    padding: 20px 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 99;
+}
+footer .footer-menu .playing small:hover{
+    text-decoration: underline;
+}
+footer .playing img{
+    max-width: 45px;
+    max-height: 45px;
+}
+.bar , .volume-bar{
+    background-color: #5a5a5a;
+    height: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.bar{
+    width: 25vw;
+}
+.grey-bar, .grey-volume{
+    background-color: #c1c1c1;
+    height: 5px;
+    /* min-width: 85px; */
+    width: 0;
+    border-radius: 10px;
+}
+.grey-bar{
+    animation: load 60s normal forwards;
+}
+@keyframes load{
+    0% { width: 0; }
+    100% { width: 25vw; }
+}
+.hover-bar:hover,
+.audio .grey-volume:hover,
+.bar:hover .hover-bar,
+.volume-bar:hover .grey-volume{
+    background-color: #adff2f;
+}
+footer .time-bar .bar i,
+footer .audio .volume-bar i{
+    color: white;
+    display: none;
+}
+footer .time-bar .bar .hover-bar:hover + i,
+footer .audio .volume-bar .grey-volume:hover + i,
+.bar:hover .hover-bar + i,
+.volume-bar:hover .grey-volume + i{
+    display: block;
+}
+footer .time-bar span{
+    color: white;
+    font-weight: 700;
+    font-size: 10px;
+}
+footer .footer-button{
+    padding-bottom: 10px;
+    font-size: 18px;
+    color: white;
+}
+footer .footer-button .fa-circle-play{
+    font-size: 30px;
+}
+footer .footer-button i:hover{
+    transform: scale(1.2);
+}
+.audio .volume-bar{
+    min-width: 120px;
+}
+.audio .grey-volume{
+    min-width: 25px;
+}
+footer .footer-menu{
+    position: relative;
+}
+footer .songs-menu{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+/* #region ---- Footer Media Query ---- */
+
+@media screen and (max-width: 1100px){
+    .audio .volume-bar{
+        min-width: 120px;
+    }
+    .audio .grey-volume{
+        min-width: 25px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    footer .bar .grey-bar{
+        min-width: 30px;
+    }
+    .audio .volume-bar{
+        min-width: 105px;
+    }
+    .audio .grey-volume{
+        min-width: 20px;
+    }
+    #footer-block{
+        display: block;
+    }
+    .songs-menu .footer-button{
+        gap: 25px;
+    }
+    .footer-menu .playing img{
+        max-width: 40px;
+        max-height: 40px;
+    }
+    footer .time-bar .bar i,
+    footer .audio .volume-bar i{
+        font-size: 12px;
+    }
+
+}
+@media screen and (max-width: 600px){
+    footer .bar .grey-bar{
+        min-width: 25px;
+    }
+    .audio .volume-bar{
+        min-width: 85px;
+    }
+    .audio .grey-volume{
+        min-width: 20px;
+    }
+    footer .footer-menu .playing small{
+        width: 50%;
+        display: inline-block;
+    }
+    #footer-block{
+        position: relative;
+        left: -20px;
+    }
+}
+
+/* #endregion ---- Footer Media Query ---- */
+
+/* #endregion ---- Footer section ---- */
+
+/* #region ---- General Media Query ---- */
+
+@media screen and (max-width: 600px){
+    .hidden{
+        display: block;
+    }
+    .visible{
+        display: none;
+    }
+    main nav{
+        min-width: 50px;
+    }
+}
+
+/* #endregion ---- General Media Query ---- */
