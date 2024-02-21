@@ -224,12 +224,14 @@ main .hidden ul{
     padding: 8px 0;
     overflow-y: hidden;
 }
+.playlist button{
+    margin-bottom: 10px;
+}
 .playlist ul{
     overflow-y: auto;
-    height: calc(100% - 71px);
-    padding-top: 10px;
+    height: calc(100% - 80px);
 }
-.playlist *{
+.playlist h5, .playlist button{
     padding: 5px 0;
 }
 .playlist button i{
@@ -283,12 +285,11 @@ main .hidden ul{
 .user{
     padding: 8px 0;
 }
-.download a i{
+.download .profile-img{
     background-color: #7f838b;
     border-radius: 50%;
     min-width:  25px;
     min-height: 25px;
-    font-size: 25px;
     overflow: hidden;
     text-align: center;
 }
@@ -297,10 +298,9 @@ main .hidden ul{
     min-width: 15px;
     margin-left: -1px;
 }
-.download .hidden i{
+.download .hidden .profile-img{
     min-height: 25px;
     min-width: 25px; 
-    font-size: 25px;
 }
 /* #region ---- Download-Media Query ---- */
 
@@ -351,23 +351,31 @@ main .in-evidence{
     margin-top: 25px;
     margin-bottom: 30px;
 }
-.play-hover{
+.anchor{
     position: relative;
 }
-.play-hover i{
+.anchor img{
+    display: block;
+}
+.play-hover{
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50% , -50%);
-    font-size: 80px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 70px;
     color: white;
     display: none;
 }
-.card-6 .play-hover:hover i{
-    display: block;
+.play-hover i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
 }
-.card-6 .play-hover:hover img{
-    opacity: 0.7;
+.card-6:hover .play-hover{
+    display: block;
 }
 .in-evidence button:hover{
     transform: scale(1.2);
@@ -378,18 +386,23 @@ main .in-evidence{
     .card-6{
         width: 25%;
     }
+    .play-hover{
+        font-size: 50px;
+    }
     
 }
 @media screen and (max-width: 700px){
     .card-6{
         width: 50%;
     }
-    
 }
 @media screen and (max-width: 600px){
-  .upgrade{
-    width: calc(100% - 50px);
-  }
+    .upgrade{
+        width: calc(100% - 50px);
+    }
+    .in-evidence button:hover{
+        transform: scale(1.1);
+    }
 }
 /* #endregion ---- In Evidence-Media Query ---- */
 
