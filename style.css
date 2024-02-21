@@ -368,6 +368,9 @@ main .in-evidence{
     color: white;
     display: none;
 }
+.card-6-rounded ~ .play-hover{
+    border-radius: 50%;
+}
 .play-hover i{
     position: absolute;
     top: 50%;
