@@ -379,17 +379,6 @@ main .in-evidence{
     animation-delay: 3s;
     z-index: 1;
 }
-@keyframes zoom-in-out{
-    0%{
-        transform: scale(1, 1);
-    }
-    50%{
-        transform: scale(1.5, 1.5);
-    }
-    100%{
-        transform: scale(1, 1);
-    }
-}
 .card-6-rounded ~ .play-hover{
     border-radius: 50%;
 }
@@ -405,6 +394,31 @@ main .in-evidence{
 .in-evidence button:hover{
     transform: scale(1.2);
 }
+.full-color:hover{
+    animation: full-color 1s normal forwards;
+}
+/* #region ---- In evidence-Keyframes ---- */
+@keyframes full-color{
+    0%{
+        color: white;
+    }
+    100%{
+        color: #adff2f;
+    }
+}
+@keyframes zoom-in-out{
+    0%{
+        transform: scale(1, 1);
+    }
+    50%{
+        transform: scale(1.5, 1.5);
+    }
+    100%{
+        transform: scale(1, 1);
+    }
+}
+/* #endregion ---- In evidence-Keyframes ---- */
+
 /* #region ---- In evidence-Media Query ---- */
 
 @media screen and (max-width: 1100px){
