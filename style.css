@@ -441,8 +441,16 @@ footer .playing img{
 .grey-bar, .grey-volume{
     background-color: #c1c1c1;
     height: 5px;
-    min-width: 85px;
+    /* min-width: 85px; */
+    width: 0;
     border-radius: 10px;
+}
+.grey-bar{
+    animation: load 60s normal forwards;
+}
+@keyframes load{
+    0% { width: 0; }
+    100% { width: 25vw; }
 }
 .hover-bar:hover,
 .audio .grey-volume:hover,
