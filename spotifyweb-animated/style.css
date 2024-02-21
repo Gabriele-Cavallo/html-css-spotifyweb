@@ -368,6 +368,28 @@ main .in-evidence{
     color: white;
     display: none;
 }
+.rotate-square .card-6:hover .anchor,
+.card-6:hover .anchor .card-6-rounded,
+.card-6:hover .anchor  .card-6-rounded ~ .play-hover{
+    transform: rotate(360deg);
+    transition: 3s;
+    border: #adff2f 2px solid;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    animation: zoom-in-out 3s normal;
+    animation-delay: 3s;
+    z-index: 1;
+}
+@keyframes zoom-in-out{
+    0%{
+        transform: scale(1, 1);
+    }
+    50%{
+        transform: scale(1.5, 1.5);
+    }
+    100%{
+        transform: scale(1, 1);
+    }
+}
 .card-6-rounded ~ .play-hover{
     border-radius: 50%;
 }
